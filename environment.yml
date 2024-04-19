@@ -1,0 +1,16 @@
+name: brep_mfr
+channels:
+  - pytorch
+  - dglteam/label/cu117
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - pytorch=1.13.1=py3.9_cuda11.7_cudnn8.5.0_0
+  - dgl=1.0.0.cu117=py39_0
+  - fairseq=0.12.3=py39hecd8040_3
+  - pip:
+      - pytorch-lightning==1.7.1
+      - torch-geometric==2.3.1
+      - numpy==1.23.5
+      
